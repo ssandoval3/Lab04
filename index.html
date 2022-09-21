@@ -11,18 +11,18 @@
       <form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
 	    <h1>Volunteer Form</h1>
 		<fieldset>
-		  <legend>My Info</legend>
+		  <legend><strong>My Info</strong></legend>
 		  <div>
-		    <label>First Name: <input type="text" name="first_name_field" placeholder = "First Name"></label>
+		    <label>First Name: <input type="text" name="first_name_field" placeholder = "First Name"></label> <br>
 		  </div>
 		  <div>
-		    <label>Last Name: <input type="text" name="Last_name_field" placeholder = "Last Name"></label>
+		    <label>Last Name: <input type="text" name="Last_name_field" placeholder = "Last Name"></label> <br>
 		  </div>
 		  <div>
-		    <label>Phone Number: <input type="text" name="phone_number_field" placeholder = "Phone Number"></label>
+		    <label>Phone Number: <input type="text" name="phone_number_field" placeholder = "Phone Number"></label> <br>
 		  </div>
 		  <div>
-		    <label>Email Address: <input type="text" name="email_address_field" placeholder = "Email Address"></label>
+		    <label>Email Address: <input type="text" name="email_address_field" placeholder = "Email Address"></label> <br>
 		  </div>
 		  <div>
 		    <label>Gender: </label>
@@ -31,17 +31,38 @@
 		  </div>
 		  <div>
 		    <label>Age: </label>
-                <select name="age_field">
-                    <option value="under 18">under 18</option>
-                    <option value="18-24">18-24</option>
-                    <option value="25-34">25-34</option>
-                    <option value="35-44">35-44</option>
-                    <option value="45-54">45-54</option>
-                    <option value="55-64">55-64</option>
-                    <option value="65 and over">65 and over</option>
-                </select>
+              <select name="age_field">
+                <option value="under 18">under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55-64">55-64</option>
+                <option value="65 and over">65 and over</option>
+              </select>
 		  </div>
-		
 		</fieldset>
+		<fieldset>
+		  <legend><strong>My Availability</strong></legend>
+		  <div>
+		    <label>Days Available: </label>
+			<label> <input type = "checkbox" name = "available_field[]" value = "Sunday"> Sunday </label> <br>
+			<label> <input type = "checkbox" name = "available_field[]" value = "Monday"> Monday </label> <br>
+			<label> <input type = "checkbox" name = "available_field[]" value = "Tuesday"> Tuesday </label> <br>
+			<label> <input type = "checkbox" name = "available_field[]" value = "Wednesday"> Wednesday </label> <br>
+			<label> <input type = "checkbox" name = "available_field[]" value = "Thursday"> Thursday </label> <br>
+			<label> <input type = "checkbox" name = "available_field[]" value = "Friday"> Friday </label> <br>
+			<label> <input type = "checkbox" name = "available_field[]" value = "Saturday"> Saturday </label> <br>
+		  </div>
+		  <div>
+		    <label>Any Comments?</label> <br>
+			<textarea cols = "85" rows = "15" name = "comments_field" placeholder = "Comment here..."></textarea>
+		  </div>
+		</fieldset>
+		
+		<input type="hidden" name="hidden_field" value="ssandoval3">
+		
+		<input type="submit" value="Send Me">
+	  </form>
   </body>
 </html>
