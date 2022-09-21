@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Volunteer Form</title>
+  </head>
+  <body>
+      <form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+	    <h1>Volunteer Form</h1>
+		<fieldset>
+		  <legend>My Info</legend>
+		  <div>
+		    <label>First Name: <input type="text" name="first_name_field" placeholder = "First Name"></label>
+		  </div>
+		  <div>
+		    <label>Last Name: <input type="text" name="Last_name_field" placeholder = "Last Name"></label>
+		  </div>
+		  <div>
+		    <label>Phone Number: <input type="text" name="phone_number_field" placeholder = "Phone Number"></label>
+		  </div>
+		  <div>
+		    <label>Email Address: <input type="text" name="email_address_field" placeholder = "Email Address"></label>
+		  </div>
+		  <div>
+		    <label>Gender: </label>
+            <label><input type="radio" name="gender_field" value="Male">Male</label>
+            <label><input type="radio" name="gender_field" value="Female">Female</label>
+		  </div>
+		  <div>
+		    <label>Age: </label>
+                <select name="age_field">
+                    <option value="under 18">under 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55-64">55-64</option>
+                    <option value="65 and over">65 and over</option>
+                </select>
+		  </div>
+		
+		</fieldset>
+  </body>
+</html>
